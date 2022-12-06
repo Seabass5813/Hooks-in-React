@@ -9,9 +9,12 @@ const SongList = () => {
         { title: 'Memory Gospel', id: 2 },
         { title: 'This Wild Darkness', id: 3 }
     ]);
+
     const addSong = (title) => {
+        //setSongs is from above it is used to modify the 'songs' list/array. The 3 periods is to pull the songs from above. 
         setSongs([...songs, { title, id: uuidv4() }])
     }
+    
     return (
         <div className='song-list'>
             <ul>

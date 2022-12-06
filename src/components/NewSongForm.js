@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const NewSongForm = ({ addSong }) => {
     const [title, setTitle] = useState('');
     const handleSubmit = (e) => {
+        //e.preventDefault prevents the page from refreshing when we hit submit on the form
         e.preventDefault();
         addSong(title);
         setTitle('')
