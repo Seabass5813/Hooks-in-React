@@ -1,3 +1,9 @@
+# UUID - Video is a little different.
+
+Fix: import { v4 as uuidv4 } from 'uuid';
+Use: uuidv4() for the id
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
